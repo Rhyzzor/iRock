@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>iRock - Interativo</title>
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <script type="text/javascript">
+        function touchRock(){
+          var userName = prompt("Qual seu nome?", "Insira seu nome aqui: ")
+          if (userName){
+            document.getElementById("rockImg").src = "rock_happy.png";
+            alert("Prazer em conhecer você, " +userName + ".");
+          }
+        }
+    </script>
+  </head>
+  <body onload="alert('Olá, eu sou o iRock, sua pedra de estimação');">
+    <div class='container'>
+        <img src="rock.png" alt="" id="rockImg" onclick="touchRock()">
+    </div>
+  </body>
+</html>
